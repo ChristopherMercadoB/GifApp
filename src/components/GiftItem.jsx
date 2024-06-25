@@ -1,16 +1,12 @@
 import React from "react";
-import './GifItem.css'
+import "./GifItem.css";
 
-const GiftItem = ({ category, images }) => {
+const GiftItem = ({ category, img, title }) => {
   return (
     <div className="content">
-      <h3>{category}</h3>
-      <div className="img-container">
-        {images.map(({ id, title, img }) => (
-          <div className="img-item" key={id}>
-            <img src={img} alt="" />
-          </div>
-        ))}
+      <div className="card">
+        <img src={img} alt="Algo mal" />
+        <p>{title}</p>
       </div>
     </div>
   );
