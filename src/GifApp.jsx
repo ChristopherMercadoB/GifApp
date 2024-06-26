@@ -1,5 +1,6 @@
 import React, { useCallback, useState } from "react";
-import {AddCategory, GifGrid} from "./components/index";
+import AddCategory from "./components/AddCategory";
+import GifGrid from "./components/GifGrid";
 
 
 const GifApp = () => {
